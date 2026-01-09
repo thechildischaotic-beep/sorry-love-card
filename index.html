@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sorry My Love ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -17,16 +17,16 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #ffe4ec, #fff);
+      background: linear-gradient(to bottom, #ffe4ec, #ffffff);
       overflow: hidden;
     }
 
     /* Cherry Blossom Animation */
     .petal {
       position: fixed;
-      top: -10px;
-      width: 15px;
-      height: 15px;
+      top: -20px;
+      width: 14px;
+      height: 14px;
       background: pink;
       border-radius: 50% 50% 50% 0;
       opacity: 0.7;
@@ -50,21 +50,12 @@
     .slide {
       width: 100vw;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       padding: 30px;
       text-align: center;
-    }
-
-    .slide img, .slide video {
-      width: 280px;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     h1 {
@@ -81,6 +72,15 @@
       line-height: 1.8;
     }
 
+    img, video {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
     .controls {
       position: fixed;
       bottom: 20px;
@@ -91,13 +91,13 @@
     }
 
     .controls button {
-      padding: 10px 18px;
+      padding: 10px 20px;
       border: none;
       background: #e75480;
-      color: #fff;
+      color: white;
       border-radius: 25px;
-      cursor: pointer;
       font-size: 14px;
+      cursor: pointer;
     }
 
     audio {
@@ -105,88 +105,91 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="song.mp3" type="audio/mpeg">
-  </audio>
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="co2.mp3" type="audio/mpeg">
+</audio>
 
-  <!-- Cherry Blossoms -->
-  <script>
-    for (let i = 0; i < 30; i++) {
-      let petal = document.createElement('div');
-      petal.className = 'petal';
-      petal.style.left = Math.random() * 100 + 'vw';
-      petal.style.animationDuration = 5 + Math.random() * 5 + 's';
-      document.body.appendChild(petal);
-    }
-  </script>
+<!-- Cherry Blossoms -->
+<script>
+  for (let i = 0; i < 30; i++) {
+    let petal = document.createElement("div");
+    petal.className = "petal";
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = 5 + Math.random() * 5 + "s";
+    document.body.appendChild(petal);
+  }
+</script>
 
-  <!-- Slides -->
-  <div class="slider" id="slider">
+<!-- Slides -->
+<div class="slider" id="slider">
 
-    <!-- Slide 1 -->
-    <div class="slide">
-      <h1>Sorry My Love ❤️</h1>
-      <img src="photo1.jpg" alt="Divya">
-      <p>
-        Divya, my sweet Laddu… I am truly sorry from the deepest corner of my heart. 
-        If my words or actions ever made you feel hurt, please believe me — it was never my intention. 
-        You are not just someone I love, you are my comfort, my peace, my safest place.
-      </p>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="slide">
-      <h1>My Precious One 🌸</h1>
-      <img src="photo2.jpg" alt="Love">
-      <p>
-        Loving you is the most beautiful feeling of my life. 
-        Your smile heals me, your presence completes me. 
-        I promise to hold your hand tighter, listen better, and love you deeper every single day.
-        Please forgive me, my Laddu… because life without your happiness feels empty.
-      </p>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="slide">
-      <h1>Forever Yours 💖</h1>
-      <video src="video.mp4" controls></video>
-      <p>
-        This love is not temporary, Divya. It is forever. 
-        No matter how many mistakes I make, my heart will always choose you. 
-        Thank you for being my love, my best friend, my happiness. 
-        I love you more than words can ever express.
-      </p>
-    </div>
-
+  <!-- Slide 1 -->
+  <div class="slide">
+    <h1>Sorry My Love ❤️</h1>
+    <img src="yash1.jpeg" alt="Divya">
+    <p>
+      Divya, my sweet Laddu… I am truly sorry from the deepest part of my heart.
+      If I ever hurt you, please believe me — it was never my intention.
+      You are my peace, my comfort, my safest place, and I never want to be the reason for your tears.
+    </p>
   </div>
 
-  <!-- Controls -->
-  <div class="controls">
-    <button onclick="prevSlide()">⬅ Prev</button>
-    <button onclick="nextSlide()">Next ➡</button>
+  <!-- Slide 2 -->
+  <div class="slide">
+    <h1>My Precious Laddu 🌸</h1>
+    <img src="yash2.jpeg" alt="Love">
+    <p>
+      Loving you is the most beautiful thing that ever happened to me.
+      Your smile heals my soul, your presence completes my world.
+      I promise to understand you more, love you deeper, and protect your heart always.
+      Please forgive me, my love.
+    </p>
   </div>
 
-  <script>
-    let index = 0;
-    const slider = document.getElementById('slider');
+  <!-- Slide 3 -->
+  <div class="slide">
+    <h1>Forever Yours 💖</h1>
+    <video src="yash3.mp4" controls></video>
+    <p>
+      This is not just love, Divya — this is forever.
+      No matter what happens, my heart will always choose you.
+      Thank you for being my love, my best friend, my everything.
+      I love you endlessly, my Laddu.
+    </p>
+  </div>
 
-    function updateSlide() {
-      slider.style.transform = `translateX(-${index * 100}vw)`;
-    }
+</div>
 
-    function nextSlide() {
-      if (index < 2) index++;
-      updateSlide();
-    }
+<!-- Controls -->
+<div class="controls">
+  <button onclick="prevSlide()">⬅ Prev</button>
+  <button onclick="nextSlide()">Next ➡</button>
+</div>
 
-    function prevSlide() {
-      if (index > 0) index--;
-      updateSlide();
-    }
-  </script>
+<script>
+  let index = 0;
+  const slider = document.getElementById("slider");
+
+  function updateSlide() {
+    slider.style.transform = `translateX(-${index * 100}vw)`;
+  }
+
+  function nextSlide() {
+    if (index < 2) index++;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    if (index > 0) index--;
+    updateSlide();
+  }
+</script>
 
 </body>
 </html>
+
+  
